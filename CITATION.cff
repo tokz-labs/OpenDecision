@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use OpenDecision, please cite it."
+title: "OpenDecision: Fast Schema-Conditioned Decisions with Packed Candidate Encoding"
+type: software
+authors:
+  - family-names: Alwarawreh
+    given-names: Abdallah
+    email: abood@tokz.dev
+    affiliation: Tokz Labs
+year: 2026
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/tokz-labs/OpenDecision"

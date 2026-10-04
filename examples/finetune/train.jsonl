@@ -1,0 +1,12 @@
+{"text": "My card was declined at checkout even though I have funds.", "name": "intent", "question": "What does the customer want?", "labels": ["payment_issue", "refund", "shipping", "account_access"], "gold": "payment_issue"}
+{"text": "I returned the jacket two weeks ago and still have not received my money.", "name": "intent", "question": "What does the customer want?", "labels": ["payment_issue", "refund", "shipping", "account_access"], "gold": "refund"}
+{"text": "The tracking page has said 'in transit' for nine days.", "name": "intent", "question": "What does the customer want?", "labels": ["payment_issue", "refund", "shipping", "account_access"], "gold": "shipping"}
+{"text": "I reset my password but the login page keeps rejecting it.", "name": "intent", "question": "What does the customer want?", "labels": ["payment_issue", "refund", "shipping", "account_access"], "gold": "account_access"}
+{"text": "Charged twice for the same order, please send one payment back.", "name": "intent", "question": "What does the customer want?", "labels": ["payment_issue", "refund", "shipping", "account_access"], "gold": "refund"}
+{"text": "Can you ship to a PO box in Alaska?", "name": "intent", "question": "What does the customer want?", "labels": ["payment_issue", "refund", "shipping", "account_access"], "gold": "shipping"}
+{"text": "The box arrived crushed and the lamp inside is broken. I want my money back.", "name": "tags", "labels": ["damaged", "late", "refund", "wrong_item"], "gold": ["damaged", "refund"]}
+{"text": "You sent me a blue mug instead of the green one, and it came a week late.", "name": "tags", "labels": ["damaged", "late", "refund", "wrong_item"], "gold": ["late", "wrong_item"]}
+{"text": "Package showed up three days after the promised date but everything is fine.", "name": "tags", "labels": ["damaged", "late", "refund", "wrong_item"], "gold": ["late"]}
+{"text": "Wrong size shoes in the box. Please refund me, I don't want an exchange.", "name": "tags", "labels": ["damaged", "late", "refund", "wrong_item"], "gold": ["refund", "wrong_item"]}
+{"text": "Our production database has been unreachable for 20 minutes and checkout is down.", "name": "needs_escalation", "labels": ["yes", "no"], "gold": "yes"}
+{"text": "Could you update the logo on our invoices when you get a chance?", "name": "needs_escalation", "labels": ["yes", "no"], "gold": "no"}
