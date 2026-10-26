@@ -3,8 +3,8 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "opendecision"
-version = "0.1.0"
+name = "tokz-opendecision"
+version = "0.1.0.post1"
 description = "Open encoder models for fast decisions over runtime-defined options."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -44,6 +44,7 @@ opendecision-evaluate = "opendecision.cli.evaluate:main"
 [project.urls]
 Homepage = "https://github.com/tokz-labs/OpenDecision"
 Models = "https://huggingface.co/Tokz-labs"
+Demo = "https://demos.tokz.dev/minesweeper/"
 Issues = "https://github.com/tokz-labs/OpenDecision/issues"
 
 [tool.setuptools.packages.find]

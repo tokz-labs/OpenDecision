@@ -1,12 +1,15 @@
 # OpenDecision
 
 [![CI](https://github.com/tokz-labs/OpenDecision/actions/workflows/ci.yml/badge.svg)](https://github.com/tokz-labs/OpenDecision/actions/workflows/ci.yml)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/tokz-opendecision)](https://pypi.org/project/tokz-opendecision/)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/tokz-labs/OpenDecision/blob/main/LICENSE)
 [![Models on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Tokz--labs-yellow)](https://huggingface.co/Tokz-labs)
 
 **Open encoder models for fast decisions over options you define at call time.**
 
 📄 Technical report: [*OpenDecision: Fast Schema-Conditioned Decisions with Packed Candidate Encoding*](https://github.com/tokz-labs/OpenDecision/releases/latest/download/OpenDecision.pdf) (PDF; arXiv version coming soon)
+
+Demo: [a fine-tuned OpenDecision-Small plays Minesweeper in your browser](https://demos.tokz.dev/minesweeper/)
 
 Route a ticket, pick an intent, tag a document, answer yes/no — several questions about the
 same text in one call, run locally, with a probability for every option instead of
@@ -21,10 +24,11 @@ generated text.
 ## Installation
 
 ```bash
-pip install "opendecision @ git+https://github.com/tokz-labs/OpenDecision"
+pip install tokz-opendecision
 ```
 
-Python 3.10+, PyTorch 2.2+, Transformers 4.48+.
+Python 3.10+, PyTorch 2.2+, Transformers 4.48+. The package imports as `opendecision`; it is
+unrelated to the `OpenDecision` package on PyPI, and the two cannot be installed together.
 
 ## Quick start
 
@@ -49,9 +53,9 @@ out["urgent"].policy     # {'yes': 0.096, 'no': 0.904}
 Pass a list of texts to `decide()` to get one result per text (`batch_size` controls how
 many are encoded together).
 
-More examples: [`examples/quickstart.py`](examples/quickstart.py),
-[`examples/batch_routing.py`](examples/batch_routing.py) (confidence thresholds) and
-[`examples/finetune/`](examples/finetune) (training on your own labels).
+More examples: [`examples/quickstart.py`](https://github.com/tokz-labs/OpenDecision/blob/main/examples/quickstart.py),
+[`examples/batch_routing.py`](https://github.com/tokz-labs/OpenDecision/blob/main/examples/batch_routing.py) (confidence thresholds) and
+[`examples/finetune/`](https://github.com/tokz-labs/OpenDecision/tree/main/examples/finetune) (training on your own labels).
 
 ## Models
 
@@ -170,7 +174,7 @@ data is not distributed.
 ## Evaluation
 
 ```bash
-pip install "opendecision[eval] @ git+https://github.com/tokz-labs/OpenDecision"
+pip install "tokz-opendecision[eval]"
 python -m opendecision.cli.evaluate --model Tokz-labs/OpenDecision-Large --set suite-full
 python -m opendecision.cli.evaluate --model Tokz-labs/OpenDecision-Large --set heldout
 ```
