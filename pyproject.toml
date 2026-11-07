@@ -44,7 +44,7 @@ opendecision-evaluate = "opendecision.cli.evaluate:main"
 [project.urls]
 Homepage = "https://github.com/tokz-labs/OpenDecision"
 Models = "https://huggingface.co/Tokz-labs"
-Demo = "https://demos.tokz.dev/minesweeper/"
+Demo = "https://demos.tokz.si/minesweeper/"
 Issues = "https://github.com/tokz-labs/OpenDecision/issues"
 
 [tool.setuptools.packages.find]

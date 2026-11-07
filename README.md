@@ -9,7 +9,7 @@
 
 📄 Technical report: [*OpenDecision: Fast Schema-Conditioned Decisions with Packed Candidate Encoding*](https://github.com/tokz-labs/OpenDecision/releases/latest/download/OpenDecision.pdf) (PDF; arXiv version coming soon)
 
-Demo: [a fine-tuned OpenDecision-Small plays Minesweeper in your browser](https://demos.tokz.dev/minesweeper/)
+Demo: [a fine-tuned OpenDecision-Small plays Minesweeper in your browser](https://demos.tokz.si/minesweeper/)
 
 Route a ticket, pick an intent, tag a document, answer yes/no — several questions about the
 same text in one call, run locally, with a probability for every option instead of
